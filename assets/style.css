@@ -7,7 +7,12 @@ body {
 main {
     flex: 1 0 auto;
 }
-
+.text2{
+  margin-left: 25px;
+}
+.container{
+  margin-top: 30px;
+}
 .band-logo {
     z-index: 100000;
 }
@@ -30,3 +35,168 @@ main {
 footer {
   margin-top: 0!important;
 }
+.rond{
+  margin: 50px 20px 50px 20px;
+
+
+}
+.color{
+  background-color: #0279A4;
+  margin-bottom: 0;
+}
+.color2{
+  background-color: #0493A4;
+  margin bottom: 0;
+}
+
+.item1{
+  background-image: url('img/chartres.jpg');
+}
+.item2{
+  background-image: url('img/hotel.jpg');
+}
+.item3{
+  background-image: url('img/tour-eiffel.jpg');
+}
+.item4{
+  background-color: #0474d8;
+}
+div.row.color, div.row.color2 {
+  min-height: 150px;
+}
+div.row.color2{
+  margin-bottom: 0;
+}
+.text{
+  transform: rotate(90deg);
+}
+.accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 250px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div a {
+  display: block;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+
+.accordion ul li:nth-child(1) { background-image: url("tour-eiffel.jpg"); }
+
+.accordion ul li:nth-child(2) { background-image: url("chartres.jpg"); }
+
+.accordion ul li:nth-child(3) { background-image: url("hotel.jpg"); }
+
+.accordion ul li:nth-child(4) { background-image: url("lyon.jpg"); }
+
+.accordion ul li:nth-child(5) { background-image: url("plus.jpg"); }
+
+.accordion ul:hover li { width: 8%; }
+
+.accordion ul:hover li:hover { width: 60%; }
+
+.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+ @media screen and (max-width: 600px) {
+
+body { margin: 0; }
+
+.accordion { height: auto; }
+
+.accordion ul li,
+.accordion ul li:hover,
+.accordion ul:hover li,
+.accordion ul:hover li:hover {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  -webkit-transition: none;
+  transition: none;
+}
+}
+
+.about {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #666;
+}
+
+.about a {
+  color: blue;
+  text-decoration: none;
+}
+
+.about a:hover { text-decoration: underline; }
